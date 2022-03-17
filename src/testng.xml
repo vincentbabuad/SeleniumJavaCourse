@@ -2,18 +2,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Yahoo App Test Automation Suite">
-	<plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.6.0</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-          </plugin>
+	
 	
 	<test name="Yahoo App Test">
-
+	  	<plugin>
+                	<groupId>org.apache.maven.plugins</groupId>
+               		<artifactId>maven-compiler-plugin</artifactId>
+                	<version>3.6.0</version>
+              		<configuration>
+                   		<source>1.8</source>
+                    		<target>1.8</target>
+               		 </configuration>
+        	</plugin>
 		<parameter name="env" value="QA" />
 		<parameter name="browser" value="chrome" />
 		<parameter name="url" value="https://login.yahoo.com/" />
